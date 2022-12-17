@@ -1,0 +1,14 @@
+{
+  "name": "2-d_web_game-engine",
+  "version": "0.0.0",
+  "description": "2D_Web_GameEngine",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  },
+  "eslintConfig": {
+  }
+}
