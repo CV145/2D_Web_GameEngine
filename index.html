@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<!--Modifying the body tag says once all loading operations are done, do the given function-->
+<body onload="doGLDraw();">
+    <!--HTML canvas-->
+    <canvas id="GLCanvas" width="640" height="480">
+        Your browser does not support the HTML5 canvas.
+    </canvas>
+
+    <script type="text/javascript">
+        //Javascript code
+
+        //Reference to the GLCanvas drawing area
+        var canvas = document.getElementById("GLCanvas");
+
+        //Bind WebGL context to the drawing area
+        var gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
+
+        //Clear canvas drawing area
+        if (gl !== null) {
+            gl.clearColor(0.0, 0.8, 0.0, 1.0); //Clear to this color
+            gl.clear(gl.COLOR_BUFFER_BIT); //Clear the colors
+        }
+    </script>
+    <script type="text/javascript" src="src/WebGL.js"></script>
+</body>
+</html>
